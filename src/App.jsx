@@ -2,7 +2,7 @@ import { useMediaQuery } from "@mui/material";
 import { CRS } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { useState } from "react";
-import { ImageOverlay, MapContainer } from "react-leaflet";
+import { ImageOverlay, MapContainer, ZoomControl } from "react-leaflet";
 import { mapLevel } from "./mapLevel";
 import MapOverlay from "./MapOverlay";
 import "./styles.css";
@@ -19,15 +19,23 @@ function App() {
         zoom={onPhone ? -1 : 0}
         maxZoom={4}
         minZoom={onPhone ? -2 : -1}
-        style={{ height: "100vh", width: "100%" }}
+        style={{
+          height: "100vh",
+          width: "100%",
+          backgroundColor: "white",
+          borderRadius: 0,
+        }}
         crs={CRS.Simple}
         maxBounds={mapLevel[0].bounds}
+        zoomControl={false}
       >
         <ImageOverlay
           url={mapLevel[0].url}
           bounds={mapLevel[0].bounds}
           opacity={1}
+          zIndex={-1}
         />
+        <ZoomControl position="bottomright" />
         <MapOverlay />
       </MapContainer>
     </>

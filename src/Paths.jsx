@@ -4,13 +4,20 @@ import Point from "./Point";
 export default function Paths({ graph, onClick }) {
   const polylines = [];
   const points = [];
-  for (const point in graph) {
+  // graph.map((point, i) =>
+  //   point.neighbors?.map((neighborId) => {
+  //     console.log(point);
+  //     polylines.push([point.position, graph[neighborId].position]);
+  //   })
+  // );
+  // console.log(polylines);
+  graph.forEach((_, point) => {
     graph[point].id = point;
     graph[point].neighbors.forEach((neighbor) => {
       polylines.push([graph[point].position, graph[neighbor].position]);
     });
     points.push(graph[point].position);
-  }
+  });
   return (
     <>
       {polylines.map((positions, idx) => (

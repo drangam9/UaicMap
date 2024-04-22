@@ -1,41 +1,27 @@
 import { Polygon, Popup } from "react-leaflet";
 import Rectangle from "./Rectangle";
+import Room from "./Room";
+import { rooms } from "../etaj1/rooms";
 
 export default function Rooms({ roomsArr, onClick }) {
-  //TODO: test component
-  roomsArr.map(
-    (point, i) =>
-      point.rooms &&
-      point.rooms.map((room) => {
-        if (rooms[room].length == 4)
-          return (
-            <>
-              <Polygon
-                key={i}
-                id={point.id}
-                point={point}
-                pathOptions={{
-                  color: "blue",
-                }}
-                positions={rooms[room]}
-                eventHandlers={{
-                  click: onClick,
-                }}
-              >
-                {showInfo && (
-                  <Tooltip
-                    direction="right"
-                    offset={[0, 0]}
-                    opacity={1}
-                    permanent
-                  >
-                    R{room}
-                    <br />P{point.id}
-                  </Tooltip>
-                )}
-              </Polygon>
-            </>
-          );
-      })
+  return (
+    <>
+      {roomsArr.map(
+        (point, i) =>
+          point.rooms &&
+          point.rooms.map((room, i) => {
+            if (rooms[i])
+              return (
+                <Room
+                  key={rooms[room].id}
+                  point={point}
+                  room={room}
+                  rooms={rooms}
+                  onClick={onClick}
+                />
+              );
+          })
+      )}
+    </>
   );
 }
