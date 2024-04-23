@@ -39,10 +39,10 @@ export default function MobileDrawer({ content = "content" }) {
         sx={{
           paddingY: 1,
           position: "absolute",
-          top: "calc(100% - 20px)",
+          top: "calc(100% - 35px)",
           boxShadow: 5,
 
-          height: 20,
+          height: 35,
           width: 1,
         }}
       >
@@ -58,20 +58,10 @@ export default function MobileDrawer({ content = "content" }) {
         disableSwipeToOpen={false}
         zIndex={1200}
       >
+        r
         <Puller />
         <Box height="500px">
           <Box width={1} p={3}>
-            {/* <Grid container direction="row" spacing={2}>
-              <Grid item>
-                <img src="https://via.placeholder.com/150" alt="placeholder" />
-              </Grid>
-              <Grid item>
-                <img src="https://via.placeholder.com/150" alt="placeholder" />
-              </Grid>
-              <Grid item>
-                <img src="https://via.placeholder.com/150" alt="placeholder" />
-              </Grid>
-            </Grid> */}
             <ImageList cols={3} rowHeight={200}>
               {Array.from(new Array(3)).map((_, index) => (
                 <Skeleton key={index} variant="rectangular" height={200} />
@@ -79,7 +69,7 @@ export default function MobileDrawer({ content = "content" }) {
             </ImageList>
             <Divider sx={{ marginY: 2 }} />
             <Typography variant="h3">Title</Typography>
-            <Typography variant="body1">Subtitle</Typography>
+            <Typography variant="body1">{content}</Typography>
           </Box>
         </Box>
       </SwipeableDrawer>

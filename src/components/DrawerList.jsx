@@ -75,25 +75,6 @@ export default function TemporaryDrawer({ content = "content" }) {
         anchor="right"
       >
         <Box width={"300px"} p={3}>
-          {/* <Stack direction="row" spacing={1}>
-            <img
-              src="https://via.placeholder.com/150"
-              width={150}
-              alt="placeholder"
-            />
-            <Stack direction="column" spacing={1}>
-              <img
-                src="https://via.placeholder.com/150"
-                width={100}
-                alt="placeholder"
-              />
-              <img
-                src="https://via.placeholder.com/150"
-                width={100}
-                alt="placeholder"
-              />
-            </Stack>
-          </Stack> */}
           <ImageList cols={2} variant="quilted">
             <ImageListItem cols={2}>
               <Skeleton variant="rectangular" height={200} />
@@ -107,7 +88,7 @@ export default function TemporaryDrawer({ content = "content" }) {
           </ImageList>
           <Divider sx={{ marginY: 2 }} />
           <Typography variant="h3">Title</Typography>
-          <Typography variant="body1">Subtitle</Typography>
+          <Typography variant="body1">{content}</Typography>
         </Box>
       </Drawer>
     </>

@@ -19,12 +19,7 @@ function App() {
         zoom={onPhone ? -1 : 0}
         maxZoom={4}
         minZoom={onPhone ? -2 : -1}
-        style={{
-          height: "100vh",
-          width: "100%",
-          backgroundColor: "white",
-          borderRadius: 0,
-        }}
+        style={{ backgroundColor: "white" }}
         crs={CRS.Simple}
         maxBounds={mapLevel[0].bounds}
         zoomControl={false}

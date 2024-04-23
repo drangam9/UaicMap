@@ -132,7 +132,12 @@ export default function MapOverlay() {
       />
       <Chips chipData={chipData} handleClick={handleClick} />
       {start && (onMobile ? <MobileDrawer /> : <DrawerList />)}
-      {start && !end && <Polygon positions={start.room} color={"red"} />}
+      {start && !end && (
+        <Polygon
+          positions={rooms.find((room) => room.pointId == start.id).position}
+          color={"red"}
+        />
+      )}
       {/* <Button onClick={() => (window.location.href = "/")}>Home</Button> */}
       {/* <NewRectangle /> */}
       {/* {rooms.map(
