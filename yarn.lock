@@ -1151,6 +1151,18 @@
   dependencies:
     "@babel/types" "^7.20.7"
 
+"@types/geojson@*":
+  version "7946.0.14"
+  resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.14.tgz#319b63ad6df705ee2a65a73ef042c8271e696613"
+  integrity sha512-WCfD5Ht3ZesJUsONdhvm84dmzWOiOzOAqOncN0++w0lBw1o8OuDNJF2McvvCef/yBqb/HYRahp1BYtODFQ8bRg==
+
+"@types/leaflet@^1.9.3":
+  version "1.9.12"
+  resolved "https://registry.yarnpkg.com/@types/leaflet/-/leaflet-1.9.12.tgz#a6626a0b3fba36fd34723d6e95b22e8024781ad6"
+  integrity sha512-BK7XS+NyRI291HIo0HCfE18Lp8oA30H1gpi1tf0mF3TgiCEzanQjOqNZ4x126SXzzi2oNSZhZ5axJp1k0iM6jg==
+  dependencies:
+    "@types/geojson" "*"
+
 "@types/node@>=12.12.47", "@types/node@>=13.7.0":
   version "20.12.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.12.2.tgz#9facdd11102f38b21b4ebedd9d7999663343d72e"
@@ -1555,6 +1567,13 @@ json5@^2.2.3:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
   integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
+
+leaflet-rotate-map@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/leaflet-rotate-map/-/leaflet-rotate-map-0.3.1.tgz#4cbdf8d73c208a27492b53bd4efc9187b011f4ba"
+  integrity sha512-eXh4vIbXNb81p/B5yJMocAX8q1FaK+saineveJdtwRZgzjA53S8ZfaLkyZ4S7b4GkMQHn6w3qOHqXTVDJ7vxHQ==
+  dependencies:
+    "@types/leaflet" "^1.9.3"
 
 leaflet@^1.9.4:
   version "1.9.4"

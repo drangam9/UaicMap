@@ -14,6 +14,7 @@ export const rooms = [
       [1756, 356.75],
     ],
     pointId: 26,
+    label: "Room 0",
     type: "basic",
     color: colors.basic,
   },
@@ -28,6 +29,7 @@ export const rooms = [
     pointId: 27,
     type: "basic",
     color: colors.basic,
+    label: "Room 1",
   },
   {
     id: 2,
@@ -38,9 +40,9 @@ export const rooms = [
       [1756.5, 458.25],
     ],
     pointId: 28,
-
     type: "basic",
     color: colors.basic,
+    label: "Room 2",
   },
   {
     id: 3,
@@ -51,9 +53,9 @@ export const rooms = [
       [1756.75, 479.875],
     ],
     pointId: 30,
-
     type: "basic",
     color: colors.basic,
+    label: "Room 3",
   },
   {
     id: 4,
@@ -64,9 +66,9 @@ export const rooms = [
       [1756.625, 529.5],
     ],
     pointId: 31,
-
     type: "basic",
     color: colors.basic,
+    label: "Room 4",
   },
   {
     id: 5,
@@ -77,15 +79,16 @@ export const rooms = [
       [1757, 579.375],
     ],
     pointId: 32,
-
     type: "basic",
     color: colors.basic,
+    label: "Room 5",
   },
   {
     id: 6,
     position: [],
     type: "basic",
     color: colors.basic,
+    label: "Room 6",
   },
   {
     id: 7,
@@ -96,9 +99,9 @@ export const rooms = [
       [1757.25, 623.125],
     ],
     pointId: 33,
-
     type: "basic",
     color: colors.basic,
+    label: "Room 7",
   },
   {
     id: 8,
@@ -109,9 +112,9 @@ export const rooms = [
       [1757.25, 688],
     ],
     pointId: 34,
-
     type: "basic",
     color: colors.basic,
+    label: "Room 8",
   },
   {
     id: 9,
@@ -122,9 +125,9 @@ export const rooms = [
       [1738.625, 683.25],
     ],
     pointId: 34,
-
     type: "basic",
     color: colors.basic,
+    label: "Room 9",
   },
   {
     id: 10,
@@ -135,9 +138,9 @@ export const rooms = [
       [1677.375, 623.25],
     ],
     pointId: 35,
-
     type: "basic",
     color: colors.basic,
+    label: "Room 10",
   },
   {
     id: 11,
@@ -148,14 +151,13 @@ export const rooms = [
       [1615.5, 623.125],
     ],
     pointId: 36,
-
     type: "basic",
     color: colors.basic,
+    label: "Room 11",
   },
   {
     id: 12,
     pointId: 37,
-
     position: [
       [1584.5, 595.375],
       [1610, 595.375],
@@ -164,11 +166,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 12",
   },
   {
     id: 13,
     pointId: 38,
-
     position: [
       [1565.125, 595.375],
       [1578.875, 595.375],
@@ -177,11 +179,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 13",
   },
   {
     id: 14,
     pointId: 39,
-
     position: [
       [1532.25, 595.5],
       [1561.75, 595.5],
@@ -190,11 +192,11 @@ export const rooms = [
     ],
     type: "stairs",
     color: colors.stairs,
+    label: "Room 14",
   },
   {
     id: 15,
     pointId: 64,
-
     position: [
       [1532.625, 650.5],
       [1578.875, 650.5],
@@ -203,11 +205,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 15",
   },
   {
     id: 16,
     pointId: 63,
-
     position: [
       [1532.625, 686.625],
       [1571.125, 686.625],
@@ -216,11 +218,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 16",
   },
   {
     id: 17,
     pointId: 65,
-
     position: [
       [1532.5, 707.5],
       [1571.25, 707.5],
@@ -229,11 +231,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 17",
   },
   {
     id: 18,
     pointId: 65,
-
     position: [
       [1532.625, 749.75],
       [1571.5, 749.75],
@@ -242,11 +244,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 18",
   },
   {
     id: 19,
     pointId: 66,
-
     position: [
       [1532.625, 776.75],
       [1571.75, 776.75],
@@ -255,11 +257,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 19",
   },
   {
     id: 20,
     pointId: 67,
-
     position: [
       [1532.75, 821],
       [1572, 821],
@@ -268,11 +270,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 20",
   },
   {
     id: 21,
     pointId: 67,
-
     position: [
       [1509.5, 850.25],
       [1579.625, 850.25],
@@ -281,11 +283,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 21",
   },
   {
     id: 22,
     pointId: 76,
-
     position: [
       [1457.375, 850.5],
       [1504.125, 850.5],
@@ -294,11 +296,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 22",
   },
   {
     id: 23,
     pointId: 75,
-
     position: [
       [1410.375, 850.5],
       [1454.125, 850.5],
@@ -307,11 +309,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 23",
   },
   {
     id: 24,
     pointId: 74,
-
     position: [
       [1349.875, 850.625],
       [1407, 850.625],
@@ -320,11 +322,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 24",
   },
   {
     id: 25,
     pointId: 73,
-
     position: [
       [1322.625, 850.75],
       [1347, 850.75],
@@ -333,11 +335,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 25",
   },
   {
     id: 26,
     pointId: 72,
-
     position: [
       [1253.5, 850.875],
       [1319.25, 850.875],
@@ -346,11 +348,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 26",
   },
   {
     id: 27,
     pointId: 25,
-
     position: [
       [1737.125, 258.75],
       [1750.125, 258.75],
@@ -359,11 +361,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 27",
   },
   {
     id: 28,
     pointId: 24,
-
     position: [
       [1662.25, 315.75],
       [1732.5, 315.75],
@@ -372,11 +374,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 28",
   },
   {
     id: 29,
     pointId: 29,
-
     position: [
       [1612.25, 316],
       [1659, 316],
@@ -385,11 +387,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 29",
   },
   {
     id: 30,
     pointId: 22,
-
     position: [
       [1583.5, 316],
       [1606.75, 316],
@@ -398,11 +400,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 30",
   },
   {
     id: 31,
     pointId: 21,
-
     position: [
       [1562.25, 315.75],
       [1577.75, 315.75],
@@ -411,11 +413,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 31",
   },
   {
     id: 32,
     pointId: 21,
-
     position: [
       [1530.75, 248.75],
       [1577.25, 248.75],
@@ -424,11 +426,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 32",
   },
   {
     id: 33,
     pointId: 0,
-
     position: [
       [1530.75, 200.5],
       [1568.75, 200.5],
@@ -437,11 +439,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 33",
   },
   {
     id: 34,
     pointId: 1,
-
     position: [
       [1530.5, 157.5],
       [1569, 157.5],
@@ -450,11 +452,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 34",
   },
   {
     id: 35,
     pointId: 2,
-
     position: [
       [1530.25, 135.75],
       [1568.75, 135.75],
@@ -463,11 +465,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 35",
   },
   {
     id: 36,
     pointId: 3,
-
     position: [
       [1530, 58.25],
       [1569, 58.25],
@@ -476,11 +478,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 36",
   },
   {
     id: 37,
     pointId: 3,
-
     position: [
       [1506.25, 58.5],
       [1524.25, 58.5],
@@ -489,11 +491,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 37",
   },
   {
     id: 38,
     pointId: 4,
-
     position: [
       [1431.5, 52],
       [1500.5, 52],
@@ -502,11 +504,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 38",
   },
   {
     id: 39,
     pointId: 7,
-
     position: [
       [1354.875, 113.25],
       [1399.5, 113.25],
@@ -515,11 +517,11 @@ export const rooms = [
     ],
     type: "stairs",
     color: colors.stairs,
+    label: "Room 39",
   },
   {
     id: 40,
     pointId: 9,
-
     position: [
       [1250.25, 52.5],
       [1325.5, 52.5],
@@ -528,11 +530,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 40",
   },
   {
     id: 41,
     pointId: 11,
-
     position: [
       [1230.75, 63.625],
       [1244.75, 63.625],
@@ -541,11 +543,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 41",
   },
   {
     id: 42,
     pointId: 11,
-
     position: [
       [1185.25, 63.375],
       [1225, 63.375],
@@ -554,11 +556,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 42",
   },
   {
     id: 43,
     pointId: 12,
-
     position: [
       [1185.75, 136.125],
       [1225.25, 136.125],
@@ -567,11 +569,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 43",
   },
   {
     id: 44,
     pointId: 13,
-
     position: [
       [1185.875, 161.25],
       [1225.375, 161.25],
@@ -580,11 +582,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 44",
   },
   {
     id: 45,
     pointId: 14,
-
     position: [
       [1158, 243],
       [1222.875, 243],
@@ -593,11 +595,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 45",
   },
   {
     id: 46,
     pointId: 49,
-
     position: [
       [1158.25, 318.375],
       [1222.875, 318.375],
@@ -606,11 +608,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 46",
   },
   {
     id: 47,
     pointId: 50,
-
     position: [
       [1158.5, 345.25],
       [1223.375, 345.25],
@@ -619,11 +621,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 47",
   },
   {
     id: 48,
     pointId: 51,
-
     position: [
       [1158.75, 406.75],
       [1223.5, 406.75],
@@ -632,11 +634,11 @@ export const rooms = [
     ],
     type: "stairs",
     color: colors.stairs,
+    label: "Room 48",
   },
   {
     id: 49,
     pointId: 52,
-
     position: [
       [1158.875, 439.25],
       [1223.5, 439.25],
@@ -645,6 +647,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 49",
   },
   {
     id: 50,
@@ -657,6 +660,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 50",
   },
   {
     id: 51,
@@ -669,6 +673,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 51",
   },
   {
     id: 52,
@@ -681,6 +686,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 52",
   },
   {
     id: 53,
@@ -693,6 +699,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 53",
   },
   {
     id: 54,
@@ -705,6 +712,7 @@ export const rooms = [
     ],
     type: "stairs",
     color: colors.stairs,
+    label: "Room 54",
   },
   {
     id: 55,
@@ -717,17 +725,20 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 55",
   },
   {
     id: 56,
+    pointId: 129,
     position: [
       [1531.125, 316.125],
       [1558, 316.125],
       [1558, 346.5],
       [1531.125, 346.5],
     ],
-    type: "basic",
+    type: "stairs",
     color: colors.basic,
+    label: "Room 56",
   },
   {
     id: 57,
@@ -740,6 +751,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 57",
   },
   {
     id: 58,
@@ -752,6 +764,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 58",
   },
   {
     id: 59,
@@ -764,6 +777,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 59",
   },
   {
     id: 60,
@@ -776,6 +790,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 60",
   },
   {
     id: 61,
@@ -788,6 +803,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 61",
   },
   {
     id: 62,
@@ -800,6 +816,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 62",
   },
   {
     id: 63,
@@ -812,6 +829,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 63",
   },
   {
     id: 64,
@@ -824,6 +842,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 64",
   },
   {
     id: 65,
@@ -836,6 +855,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 65",
   },
   {
     id: 66,
@@ -848,6 +868,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 66",
   },
   {
     id: 67,
@@ -860,6 +881,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 67",
   },
   {
     id: 68,
@@ -872,6 +894,7 @@ export const rooms = [
     ],
     type: "stairs",
     color: colors.stairs,
+    label: "Room 68",
   },
   {
     id: 69,
@@ -884,6 +907,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 69",
   },
   {
     id: 70,
@@ -896,6 +920,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 70",
   },
   {
     id: 71,
@@ -908,6 +933,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 71",
   },
   {
     id: 72,
@@ -920,6 +946,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 72",
   },
   {
     id: 73,
@@ -932,6 +959,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 73",
   },
   {
     id: 74,
@@ -944,6 +972,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 74",
   },
   {
     id: 75,
@@ -956,6 +985,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 75",
   },
   {
     id: 76,
@@ -968,6 +998,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 76",
   },
   {
     id: 77,
@@ -980,6 +1011,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 77",
   },
   {
     id: 78,
@@ -992,6 +1024,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 78",
   },
   {
     id: 79,
@@ -1004,6 +1037,7 @@ export const rooms = [
     ],
     type: "stairs",
     color: colors.stairs,
+    label: "Room 79",
   },
   {
     id: 80,
@@ -1016,6 +1050,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 80",
   },
   {
     id: 81,
@@ -1028,6 +1063,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 81",
   },
   {
     id: 82,
@@ -1040,6 +1076,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 82",
   },
   {
     id: 83,
@@ -1052,6 +1089,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 83",
   },
   {
     id: 84,
@@ -1064,6 +1102,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 84",
   },
   {
     id: 85,
@@ -1076,6 +1115,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 85",
   },
   {
     id: 86,
@@ -1088,6 +1128,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 86",
   },
   {
     id: 87,
@@ -1100,6 +1141,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 87",
   },
   {
     id: 88,
@@ -1112,6 +1154,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 88",
   },
   {
     id: 89,
@@ -1124,6 +1167,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 89",
   },
   {
     id: 90,
@@ -1136,6 +1180,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 90",
   },
   {
     id: 91,
@@ -1147,6 +1192,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 91",
   },
   {
     id: 92,
@@ -1159,6 +1205,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 92",
   },
   {
     id: 93,
@@ -1171,6 +1218,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 93",
   },
   {
     id: 94,
@@ -1183,6 +1231,7 @@ export const rooms = [
     ],
     type: "stairs",
     color: colors.stairs,
+    label: "Room 94",
   },
   {
     id: 95,
@@ -1195,6 +1244,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 95",
   },
   {
     id: 96,
@@ -1207,6 +1257,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 96",
   },
   {
     id: 97,
@@ -1219,6 +1270,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 97",
   },
   {
     id: 98,
@@ -1231,6 +1283,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 98",
   },
   {
     id: 99,
@@ -1243,6 +1296,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 99",
   },
   {
     id: 100,
@@ -1255,6 +1309,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 100",
   },
   {
     id: 101,
@@ -1267,6 +1322,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 101",
   },
   {
     id: 102,
@@ -1279,6 +1335,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 102",
   },
   {
     id: 103,
@@ -1291,6 +1348,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 103",
   },
   {
     id: 104,
@@ -1303,6 +1361,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 104",
   },
   {
     id: 105,
@@ -1315,6 +1374,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 105",
   },
   {
     id: 106,
@@ -1327,6 +1387,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 106",
   },
   {
     id: 107,
@@ -1339,6 +1400,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 107",
   },
   {
     id: 108,
@@ -1351,6 +1413,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 108",
   },
   {
     id: 109,
@@ -1363,6 +1426,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 109",
   },
   {
     id: 110,
@@ -1375,6 +1439,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 110",
   },
   {
     id: 111,
@@ -1387,9 +1452,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 111",
   },
   {
     id: 112,
+    pointId: 99,
     position: [
       [1161.375, 1281.125],
       [1226.125, 1281.125],
@@ -1398,6 +1465,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 112",
   },
   {
     id: 113,
@@ -1410,6 +1478,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 113",
   },
   {
     id: 114,
@@ -1422,11 +1491,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 114",
   },
   {
     id: 115,
-        pointId: 111,
-
+    pointId: 111,
     position: [
       [1409.375, 1258.5],
       [1455, 1258.5],
@@ -1435,11 +1504,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 115",
   },
   {
     id: 116,
-        pointId: 111,
-
+    pointId: 111,
     position: [
       [1458.375, 1258.375],
       [1478.625, 1258.375],
@@ -1448,11 +1517,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 116",
   },
   {
     id: 117,
-        pointId: 112,
-
+    pointId: 112,
     position: [
       [1481.75, 1258.25],
       [1505.5, 1258.25],
@@ -1461,9 +1530,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 117",
   },
   {
     id: 118,
+    pointId: 99,
     position: [
       [1586.25, 1197.625],
       [1611.875, 1197.625],
@@ -1472,11 +1543,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 118",
   },
   {
     id: 119,
-        pointId: 44,
-
+    pointId: 44,
     position: [
       [1487.125, 450.5],
       [1503.125, 450.5],
@@ -1485,9 +1556,11 @@ export const rooms = [
     ],
     type: "restroom",
     color: colors.restroom,
+    label: "Room 119",
   },
   {
     id: 120,
+    pointId: 29,
     position: [
       [1682.25, 450.125],
       [1732.25, 450.125],
@@ -1496,11 +1569,11 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
+    label: "Room 120",
   },
   {
     id: 121,
-        pointId: 71,
-
+    pointId: 71,
     position: [
       [1231.875, 930.75],
       [1249.6875, 930.75],
@@ -1509,11 +1582,11 @@ export const rooms = [
     ],
     type: "stairs",
     color: colors.stairs,
+    label: "Room 121",
   },
   {
     id: 122,
-        pointId: 109,
-
+    pointId: 109,
     position: [
       [1231.75, 1141.5],
       [1248.5, 1141.5],
@@ -1522,11 +1595,11 @@ export const rooms = [
     ],
     type: "stairs",
     color: colors.stairs,
+    label: "Room 122",
   },
   {
     id: 123,
-        pointId: 69,
-
+    pointId: 69,
     position: [
       [1252.5, 742.75],
       [1280.75, 742.75],
@@ -1535,10 +1608,11 @@ export const rooms = [
     ],
     type: "stairs",
     color: colors.stairs,
+    label: "Room 123",
   },
   {
     id: 124,
-    pointId: 123,
+    pointId: 129,
     position: [
       [1532.25, 315.625],
       [1558.625, 315.625],
@@ -1547,5 +1621,6 @@ export const rooms = [
     ],
     type: "stairs",
     color: colors.stairs,
+    label: "Room 124",
   },
 ];

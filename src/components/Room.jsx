@@ -1,16 +1,17 @@
-import { Tooltip } from "react-bootstrap";
-import { Marker, Polygon } from "react-leaflet";
+import { Marker, Polygon, Tooltip } from "react-leaflet";
 
-export default function Room({ point, room, rooms, onClick }) {
-  const r = rooms[room];
+export default function Room({ room, onClick }) {
   return (
-    <Polygon
-      id={point.id}
-      point={point}
-      pathOptions={{ color: r.color, weight: 1 }}
-      room={r.position}
-      positions={r.position}
-      eventHandlers={{ click: onClick }}
-    />
+    <>
+      <Polygon
+        id={room.pointId}
+        point={room.pointID}
+        pathOptions={{ color: room.color, weight: 1 }}
+        room={room}
+        positions={room.position}
+        eventHandlers={{ click: onClick }}
+      ></Polygon>
+      {/* <Marker position={room.position[0]} /> */}
+    </>
   );
 }

@@ -21,21 +21,17 @@ import TemporaryDrawer from "./components/DrawerList";
 import MobileDrawer from "./components/MobileDrawer";
 
 export default function MapOverlay() {
-  const [pathPoints, setPathPoints] = useState([]);
-  const [destination, setDestination] = useState(null);
-  const [showAllRooms, setShowAllRooms] = useState(false);
-  const [showConnectedRooms, setShowConnectedRooms] = useState(true);
-  const [showInfo, setShowInfo] = useState(false);
-  const [showPaths, setShowPaths] = useState(false);
-  const [clicks, setClicks] = useState(0);
-  const [fromTo, setFromTo] = useState([]);
-  const [navRooms, setNavRooms] = useState([]);
+  // const [destination, setDestination] = useState(null);
+  // const [showAllRooms, setShowAllRooms] = useState(false);
+  // const [showConnectedRooms, setShowConnectedRooms] = useState(true);
+  // const [showInfo, setShowInfo] = useState(false);
+  // const [showPaths, setShowPaths] = useState(false);
+  // const [clicks, setClicks] = useState(0);
   const roomId = location.pathname.split("/")[1];
   const [start, setStart] = useState(null);
   const [end, setEnd] = useState(null);
-  const [flag, setFlag] = useState(roomId ? true : false);
   const [roomsToShow, setRoomsToShow] = useState(selectByType(["basic"]));
-  const [type, setType] = useState(["basic"]);
+  // const [type, setType] = useState(["basic"]);
   const onMobile = useMediaQuery("(max-width:600px)");
 
   const [chipData, setChipData] = useState([
@@ -72,55 +68,41 @@ export default function MapOverlay() {
 
   useEffect(() => {
     if (roomId) {
-      const currentPos = roomsArr.find((point) =>
-        point.rooms?.includes(parseInt(roomId))
-      );
-      setStart({ ...currentPos, room: rooms[parseInt(roomId)].position });
+      const currentPos = rooms.find((room) => room.id == roomId);
+      setStart(currentPos);
     }
   }, [roomId, roomsToShow]);
 
   const onClick = (e) => {
     const { room, point } = e.target.options;
+    console.log(e.target);
     if (roomId) {
-      setEnd({ ...point, room: room });
+      setEnd(room);
     } else {
       if (start) {
-        setEnd({ ...point, room: room });
+        setEnd(room);
       } else {
-        setStart({ ...point, room: room });
+        setStart(room);
       }
     }
-    setNavRooms([...navRooms, e.target.options.room]);
-    setPathPoints([...pathPoints, e.target.options.point]);
-    setDestination(null);
-    setFromTo([]);
   };
 
-  if (pathPoints.length === 2) {
-    setDestination([
-      findShortestPath(roomsArr, "" + pathPoints[0].id, "" + pathPoints[1].id),
-      navRooms,
-    ]);
-    setFromTo([pathPoints[0], pathPoints[1]]);
-    setPathPoints([]);
-    setNavRooms([]);
-  }
-  const LinkRoomToPoint = (e) => {
-    if (clicks === 0) {
-      console.log("Room clicked");
-      setClicks(1);
-      localStorage.setItem("roomId", e.target.options.id);
-    } else {
-      console.log("Point clicked");
-      setClicks(0);
-      if (!roomsArr[e.target.options.id].rooms)
-        roomsArr[e.target.options.id].rooms = [];
+  // const LinkRoomToPoint = (e) => {
+  //   if (clicks === 0) {
+  //     console.log("Room clicked");
+  //     setClicks(1);
+  //     localStorage.setItem("roomId", e.target.options.id);
+  //   } else {
+  //     console.log("Point clicked");
+  //     setClicks(0);
+  //     if (!roomsArr[e.target.options.id].rooms)
+  //       roomsArr[e.target.options.id].rooms = [];
 
-      roomsArr[e.target.options.id].rooms.push(
-        parseInt(localStorage.getItem("roomId"))
-      );
-    }
-  };
+  //     roomsArr[e.target.options.id].rooms.push(
+  //       parseInt(localStorage.getItem("roomId"))
+  //     );
+  //   }
+  // };
 
   return (
     <>
@@ -132,12 +114,7 @@ export default function MapOverlay() {
       />
       <Chips chipData={chipData} handleClick={handleClick} />
       {start && (onMobile ? <MobileDrawer /> : <DrawerList />)}
-      {start && !end && (
-        <Polygon
-          positions={rooms.find((room) => room.pointId == start.id).position}
-          color={"red"}
-        />
-      )}
+      {start && !end && <Polygon positions={start.position} color={"red"} />}
       {/* <Button onClick={() => (window.location.href = "/")}>Home</Button> */}
       {/* <NewRectangle /> */}
       {/* {rooms.map(
@@ -156,8 +133,8 @@ export default function MapOverlay() {
             </Polygon>
           )
       )} */}
-      <Rooms roomsArr={roomsToShow} onClick={onClick} />
-      {/* {<Paths graph={roomsArr} onClick={LinkRoomToPoint} />} */}
+      <Rooms rooms={roomsToShow} onClick={onClick} />
+      <Paths graph={roomsArr} />
       {roomId && <CurrentPosition roomId={roomId} />}
       {start && end && <Destination start={start} end={end} />}
     </>

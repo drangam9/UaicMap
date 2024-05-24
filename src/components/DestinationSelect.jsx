@@ -30,7 +30,7 @@ export default function DestinationSelect({
     >
       <Autocomplete
         renderInput={(params) => <TextField {...params} label="Start" />}
-        options={roomsArr}
+        options={rooms}
         onChange={handleStart}
         sx={style}
         label="Starting point..."
@@ -40,7 +40,7 @@ export default function DestinationSelect({
       {((onPhone && start) || !onPhone) && (
         <Autocomplete
           renderInput={(params) => <TextField {...params} label="End" />}
-          options={roomsArr}
+          options={rooms}
           onChange={handleEnd}
           sx={style}
           label="Destination"

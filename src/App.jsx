@@ -6,12 +6,13 @@ import { ImageOverlay, MapContainer, ZoomControl } from "react-leaflet";
 import { mapLevel } from "./mapLevel";
 import MapOverlay from "./MapOverlay";
 import "./styles.css";
+import L from "leaflet";
 
 function App() {
   const [w, h] = [3000, 1500];
   const [level, setLevel] = useState(1);
   const onPhone = useMediaQuery("(max-width:600px)");
-
+  // const map = L.map("map", { rotate: true });
   return (
     <>
       <MapContainer
@@ -23,10 +24,11 @@ function App() {
         crs={CRS.Simple}
         maxBounds={mapLevel[0].bounds}
         zoomControl={false}
+        rotate={true}
       >
         <ImageOverlay
-          url={mapLevel[0].url}
-          bounds={mapLevel[0].bounds}
+          url={mapLevel[2].url}
+          bounds={mapLevel[2].bounds}
           opacity={1}
           zIndex={-1}
         />

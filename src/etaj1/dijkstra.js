@@ -17,7 +17,7 @@ export function findShortestPath(graph, start, end) {
     }
 
     for (let neighbor of graph[closestNode].neighbors) {
-      let altDistance = distances[closestNode] + 1; // Assuming all edges have a weight of 1
+      let altDistance = distances[closestNode] + 1; 
       if (altDistance < distances[neighbor]) {
         distances[neighbor] = altDistance;
         prev[neighbor] = closestNode;
@@ -25,7 +25,7 @@ export function findShortestPath(graph, start, end) {
     }
   }
 
-  return null; // No path found
+  return null;
 }
 
 function getClosestNode(distances, unvisitedNodes) {
@@ -37,10 +37,9 @@ function getClosestNode(distances, unvisitedNodes) {
 function constructPath(prev, start, end, graph) {
   let path = [];
   for (let node = end; node !== start; node = prev[node]) {
-    path.unshift(graph[node].position);
+    path.unshift({ position: graph[node].position, rooms: graph[node].rooms });
   }
-  path.unshift(graph[start].position);
+  path.unshift({ position: graph[start].position, rooms: graph[start].rooms });
   return path;
 }
 
-// Usage:
