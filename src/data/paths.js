@@ -670,16 +670,16 @@ export const roomsArr = [
   },
   {
     position: [1746, 1243],
-    neighbors: [97, 99],
+    neighbors: [97],
     id: "98",
     rooms: [86, 87],
     label: "Room 98",
   },
   {
     position: [1573, 1242],
-    neighbors: [98, 100],
+    neighbors: [100],
     id: "99",
-    rooms: [93, 95],
+    rooms: [93, 95, 88],
     label: "Room 99",
   },
   {

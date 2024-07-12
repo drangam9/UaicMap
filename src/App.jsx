@@ -1,4 +1,4 @@
-import { useMediaQuery } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import { CRS } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { useState } from "react";
@@ -22,18 +22,28 @@ function App() {
         minZoom={onPhone ? -2 : -1}
         style={{ backgroundColor: "white" }}
         crs={CRS.Simple}
-        maxBounds={mapLevel[0].bounds}
+        maxBounds={mapLevel[1].bounds}
         zoomControl={false}
         rotate={true}
       >
         <ImageOverlay
-          url={mapLevel[2].url}
-          bounds={mapLevel[2].bounds}
+          url={mapLevel[1].url}
+          bounds={mapLevel[1].bounds}
           opacity={1}
           zIndex={-1}
         />
         <ZoomControl position="bottomright" />
         <MapOverlay />
+        <Box
+          position={"absolute"}
+          bottom={0}
+          sx={{ fontSize: onPhone ? 10 : 13 }}
+        >
+          <i>
+            credits: Marius Drangă, "Polimorfism în POO. Aplicații", coord.
+            Lect. Dr. Marius Apetrii
+          </i>
+        </Box>
       </MapContainer>
     </>
   );

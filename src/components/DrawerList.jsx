@@ -13,8 +13,12 @@ import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import * as React from "react";
 import { useEffect } from "react";
+import amf1 from "../assets/amf1.png";
+import amf2 from "../assets/amf2.png";
+import amf3 from "../assets/amf3.png";
+import orar from "../assets/orar.png";
 
-export default function TemporaryDrawer({ content = "content" }) {
+export default function TemporaryDrawer({ content = "Nr locuri: 110" }) {
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen) => () => {
@@ -77,18 +81,22 @@ export default function TemporaryDrawer({ content = "content" }) {
         <Box width={"300px"} p={3}>
           <ImageList cols={2} variant="quilted">
             <ImageListItem cols={2}>
-              <Skeleton variant="rectangular" height={200} />
+              <img src={amf1} alt="amf1" />
             </ImageListItem>
             <ImageListItem>
-              <Skeleton variant="rectangular" height={100} />
+              <img src={amf2} alt="amf2" />
             </ImageListItem>
             <ImageListItem>
-              <Skeleton variant="rectangular" height={100} />
+              <img src={amf3} alt="amf3" />
             </ImageListItem>
           </ImageList>
           <Divider sx={{ marginY: 2 }} />
-          <Typography variant="h3">Title</Typography>
+          <Typography variant="h3">Amfiteatrul Al. Myller</Typography>
           <Typography variant="body1">{content}</Typography>
+          <a href={orar} target="_blank">
+            Vezi orar
+            <img src={orar} width={"100%"} alt="orar" />
+          </a>
         </Box>
       </Drawer>
     </>

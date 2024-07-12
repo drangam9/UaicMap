@@ -4,11 +4,11 @@ import { Polygon, Tooltip } from "react-leaflet";
 import CurrentPosition from "./components/CurrentPosition";
 import Destination from "./components/Destination";
 import DestinationSelect from "./components/DestinationSelect";
-import { findShortestPath } from "./etaj1/dijkstra";
-import { roomsArr } from "./etaj1/paths";
+import { findShortestPath } from "./data/dijkstra";
+import { roomsArr } from "./data/paths";
 import NewRectangle from "./components/NewRectangle";
 import Paths from "./Paths";
-import { rooms } from "./etaj1/rooms";
+import { rooms } from "./data/rooms";
 import Room from "./components/Room";
 import Rooms from "./components/Rooms";
 import { Chip, Drawer, MenuItem, Select, useMediaQuery } from "@mui/material";
@@ -28,9 +28,13 @@ export default function MapOverlay() {
   // const [showPaths, setShowPaths] = useState(false);
   // const [clicks, setClicks] = useState(0);
   const roomId = location.pathname.split("/")[1];
+  if (rooms.find((room) => room.id == roomId) === undefined) {
+    window.location.href = "/";
+    return <></>;
+  }
   const [start, setStart] = useState(null);
   const [end, setEnd] = useState(null);
-  const [roomsToShow, setRoomsToShow] = useState(selectByType(["basic"]));
+  const [roomsToShow, setRoomsToShow] = useState(rooms);
   // const [type, setType] = useState(["basic"]);
   const onMobile = useMediaQuery("(max-width:600px)");
 
@@ -40,14 +44,14 @@ export default function MapOverlay() {
       icon: <WcIcon />,
       label: "Toilets",
       value: "restroom",
-      active: false,
+      active: true,
     },
     {
       key: 2,
       icon: <StairsIcon />,
       label: "Stairs",
       value: "stairs",
-      active: false,
+      active: true,
     },
   ]);
   const handleClick = (data) => {
@@ -75,15 +79,11 @@ export default function MapOverlay() {
 
   const onClick = (e) => {
     const { room, point } = e.target.options;
-    console.log(e.target);
-    if (roomId) {
+    console.log(room);
+    if (start) {
       setEnd(room);
     } else {
-      if (start) {
-        setEnd(room);
-      } else {
-        setStart(room);
-      }
+      setStart(room);
     }
   };
 
@@ -114,7 +114,9 @@ export default function MapOverlay() {
       />
       <Chips chipData={chipData} handleClick={handleClick} />
       {start && (onMobile ? <MobileDrawer /> : <DrawerList />)}
-      {start && !end && <Polygon positions={start.position} color={"red"} />}
+      {start && !end && !roomId && (
+        <Polygon positions={start.position} color={"red"} />
+      )}
       {/* <Button onClick={() => (window.location.href = "/")}>Home</Button> */}
       {/* <NewRectangle /> */}
       {/* {rooms.map(
@@ -134,9 +136,9 @@ export default function MapOverlay() {
           )
       )} */}
       <Rooms rooms={roomsToShow} onClick={onClick} />
-      <Paths graph={roomsArr} />
-      {roomId && <CurrentPosition roomId={roomId} />}
+      {/* <Paths graph={roomsArr} /> */}
       {start && end && <Destination start={start} end={end} />}
+      {roomId && <CurrentPosition roomId={roomId} />}
     </>
   );
 }

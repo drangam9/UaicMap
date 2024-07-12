@@ -17,7 +17,7 @@ export function findShortestPath(graph, start, end) {
     }
 
     for (let neighbor of graph[closestNode].neighbors) {
-      let altDistance = distances[closestNode] + 1; 
+      let altDistance = distances[closestNode] + 1;
       if (altDistance < distances[neighbor]) {
         distances[neighbor] = altDistance;
         prev[neighbor] = closestNode;
@@ -42,4 +42,3 @@ function constructPath(prev, start, end, graph) {
   path.unshift({ position: graph[start].position, rooms: graph[start].rooms });
   return path;
 }
-

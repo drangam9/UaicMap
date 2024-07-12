@@ -1,6 +1,6 @@
 import { Autocomplete, Stack, TextField, useMediaQuery } from "@mui/material";
-import { rooms } from "../etaj1/rooms";
-import { roomsArr } from "../etaj1/paths";
+import { rooms } from "../data/rooms";
+import { roomsArr } from "../data/paths";
 
 export default function DestinationSelect({
   start = "",

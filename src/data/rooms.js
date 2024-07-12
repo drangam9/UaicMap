@@ -378,7 +378,7 @@ export const rooms = [
   },
   {
     id: 29,
-    pointId: 29,
+    pointId: 23,
     position: [
       [1612.25, 316],
       [1659, 316],
@@ -504,7 +504,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
-    label: "Room 38",
+    label: "Sala 2.1",
   },
   {
     id: 39,
@@ -595,7 +595,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
-    label: "Room 45",
+    label: "Amfiteatrul Al. Myller",
   },
   {
     id: 46,
@@ -803,7 +803,7 @@ export const rooms = [
     ],
     type: "basic",
     color: colors.basic,
-    label: "Room 61",
+    label: "Sala 2.6",
   },
   {
     id: 62,
@@ -1145,7 +1145,7 @@ export const rooms = [
   },
   {
     id: 88,
-    pointId: 97,
+    pointId: 99,
     position: [
       [1617.75, 1186.75],
       [1735.25, 1186.75],
@@ -1158,7 +1158,7 @@ export const rooms = [
   },
   {
     id: 89,
-    pointId: 89,
+    pointId: 105,
     position: [
       [1533.75, 980.75],
       [1580.375, 980.75],
@@ -1184,6 +1184,7 @@ export const rooms = [
   },
   {
     id: 91,
+    pointId: 105,
     position: [
       [1465, 997.75],
       [1505, 997.75],
@@ -1456,7 +1457,7 @@ export const rooms = [
   },
   {
     id: 112,
-    pointId: 99,
+    pointId: 127,
     position: [
       [1161.375, 1281.125],
       [1226.125, 1281.125],

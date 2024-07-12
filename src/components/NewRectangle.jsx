@@ -26,7 +26,6 @@ export default function NewRectangle() {
         [e.latlng.lat, e.latlng.lng],
         [rectangle[0].lat, e.latlng.lng],
       ]);
-      console.log(rectangles);
     }
   });
 
