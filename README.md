@@ -34,8 +34,8 @@ To get a local copy up and running, follow these steps:
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/drangam9/licenta.git
-   cd licenta
+   git clone https://github.com/drangam9/UaicMap.git
+   cd UaicMap
    ```
 
 2. **Install dependencies**
